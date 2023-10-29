@@ -1,0 +1,85 @@
+<.flash_group flash={@flash} />
+<div class="left-[40rem] fixed inset-y-0 right-0 z-0 hidden lg:block xl:left-[50rem]">
+  <figure class="relative h-full transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+    <a href="#">
+      <img class="w-full h-full object-cover" src="/images/home.webp" alt="image description" />
+    </a>
+  </figure>
+</div>
+<div class="px-4 py-10 sm:px-6 sm:py-28 lg:px-8 xl:px-28 xl:py-32">
+  <div class="mx-auto max-w-xl lg:mx-0">
+    <.link href={~p"/"}>
+      <img src={~p"/images/logo.png"} width="200" />
+    </.link>
+    <h1 class="text-brand mt-10 flex items-center text-sm font-semibold leading-6">
+      Kumite app
+      <small class="bg-brand/5 text-[0.8125rem] ml-3 rounded-full px-2 font-medium leading-6">
+        v 0.0.0
+      </small>
+    </h1>
+    <p class="text-[2rem] mt-4 font-semibold leading-10 tracking-tighter text-zinc-900">
+      The first real time platform that track points for MMA fights
+    </p>
+    <p class="mt-4 text-base leading-7 text-zinc-600">
+      We help to organizations to track points and errors during fights, that helps fighter to mantain a clear record without manipulation of cards and points from the fights.
+    </p>
+    <div class="flex">
+      <div class="w-full sm:w-auto">
+        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-3">
+          <.link
+            navigate={~p"/users/register"}
+            class="group relative rounded-2xl px-6 py-4 text-sm font-semibold leading-6 text-zinc-900 sm:py-6"
+          >
+            <span class="absolute inset-0 rounded-2xl bg-zinc-50 transition group-hover:bg-zinc-100 sm:group-hover:scale-105">
+            </span>
+            <span class="relative flex items-center gap-4 sm:flex-col">
+              <.icon name="hero-user-plus-mini" class="h-6 w-6" /> Register
+            </span>
+          </.link>
+          <.link
+            navigate={~p"/events"}
+            class="group relative rounded-2xl px-6 py-4 text-sm font-semibold leading-6 text-zinc-900 sm:py-6"
+          >
+            <span class="absolute inset-0 rounded-2xl bg-zinc-50 transition group-hover:bg-zinc-100 sm:group-hover:scale-105">
+            </span>
+            <span class="relative flex items-center gap-4 sm:flex-col">
+              <.icon name="hero-calendar-days-mini" class="h-6 w-6" /> Events
+            </span>
+          </.link>
+          <.link
+            navigate={~p"/fighters"}
+            class="group relative rounded-2xl px-6 py-4 text-sm font-semibold leading-6 text-zinc-900 sm:py-6"
+          >
+            <span class="absolute inset-0 rounded-2xl bg-zinc-50 transition group-hover:bg-zinc-100 sm:group-hover:scale-105">
+            </span>
+            <span class="relative flex items-center gap-4 sm:flex-col">
+              <.icon name="hero-bolt-mini" class="h-6 w-6" /> Fighters
+            </span>
+          </.link>
+        </div>
+        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-3">
+          <.link
+            navigate={~p"/fights"}
+            class="group relative rounded-2xl px-6 py-4 text-sm font-semibold leading-6 text-zinc-900 sm:py-6"
+          >
+            <span class="absolute inset-0 rounded-2xl bg-zinc-50 transition group-hover:bg-zinc-100 sm:group-hover:scale-105">
+            </span>
+            <span class="relative flex items-center gap-4 sm:flex-col">
+              <.icon name="hero-fire-mini" class="h-6 w-6" /> Fights
+            </span>
+          </.link>
+          <.link
+            navigate={~p"/referees"}
+            class="group relative rounded-2xl px-6 py-4 text-sm font-semibold leading-6 text-zinc-900 sm:py-6"
+          >
+            <span class="absolute inset-0 rounded-2xl bg-zinc-50 transition group-hover:bg-zinc-100 sm:group-hover:scale-105">
+            </span>
+            <span class="relative flex items-center gap-4 sm:flex-col">
+              <.icon name="hero-identification-mini" class="h-6 w-6" /> Referees
+            </span>
+          </.link>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
